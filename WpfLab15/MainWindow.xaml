@@ -1,0 +1,169 @@
+﻿<Window x:Class="WpfLab15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLab15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="800" Width="650" Visibility="Visible">
+    <Grid>
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <DocumentViewer x:Name="documentViewer">
+            <FixedDocument >
+                <PageContent>
+                    <FixedPage>
+                        <TextBlock Text="World" FontFamily="Verdana" FontSize="14"/>
+                    </FixedPage>
+                </PageContent>
+                <PageContent>
+                    <FixedPage>
+                        <TextBlock Text="World" FontFamily="Verdana" FontSize="14"/>
+                    </FixedPage>
+                </PageContent>
+                <PageContent>
+                    <FixedPage>
+                        <TextBlock Text="World" FontFamily="Verdana" FontSize="14"/>
+                    </FixedPage>
+                </PageContent>
+            </FixedDocument>
+        </DocumentViewer>
+        <StackPanel>
+            <Button Content="Сохранить" Click="Button_Click"/>
+            <Button Content="Загруизить"/>
+        </StackPanel>-->
+        <FlowDocumentScrollViewer FontStyle="Italic" FontFamily="Calibri" Padding="0,0,0,0" >
+            <FlowDocument>
+                <Paragraph FontWeight="Bold" TextDecorations="Underline">
+                    Всё больше строительных компаний осознаёт запрос  на современные зеленые зоны даже в центральных и давно сформированных районах. Многие отвечают на него, задействуя всё имеющееся для застройки пространство. В результате в новостройках благоустроенные зоны «отрываются» от земли, заполняют стилобаты и даже кровли домов, которые становятся эксплуатируемыми.
+                </Paragraph>
+                <Paragraph>
+                    За последние пару лет представление об уютном дворе сильно изменилось и вышло на новый уровень. Например, если в окружении комплекса бизнес-класса в центре города мало зеленых зон, девелоперы стараются предлагать нестандартные решения и максимально эффективно использовать каждый доступный метр, в том числе на верхних уровнях. Появляются видовые террасы на эксплуатируемых кровлях домов, так называемые дзен-сады (сад камней для медитаций. – Прим. ред.), многоуровневые пространства с ландшафтным дизайном и островками зелени на крышах стилобатов (общий цоколь, соединяющий несколько зданий – Прим. Ред.).
+В Москве необычные подходы к благоустройству и озеленению пока проявляются в виде создания дополнительных зеленых зон на верхних уровнях. Это своего рода тренд на рациональное использование пространства, где каждый участок земли выполняет свою функцию. 
+Так происходит не только в Москве: подобные проекты актуальны для всех крупных мегаполисов с их необходимостью в экономии пространства, продиктованной плотностью населения. К примеру, одна из разновидностей высотного озеленения – вертикальное размещение растений вдоль стен жилых домов и бизнес-центров.
+                </Paragraph>
+                <Paragraph>
+                    Подобные примеры есть в:
+                </Paragraph>
+                <List MarkerStyle="Disc">
+                    <ListItem>
+                        <Paragraph>
+                            Сиднее
+                            <!--<Figure>
+                                <Image Source="/Data/4.jpeg" />
+                            </Figure>-->
+                            <Hyperlink NavigateUri="https://archi.ru/world/58450/zelenaya-arkhitektura-nalico">(проект One Central Park)
+                            </Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Милане
+                            <Hyperlink NavigateUri="https://archi.ru/projects/world/8818/zhiloi-kompleks-bosco-verticale">(Bosco Verticale)
+                            </Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Сингапуре
+                            <Hyperlink NavigateUri="https://archi.ru/projects/world/7602/bashnya-oasia-hotel-downtown">(Oasia Hotel Downtown)
+                            </Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>
+                            Японии
+                            <Hyperlink NavigateUri="https://archi.ru/projects/world/10217/kompleks-acros">(Fukuoka Prefectural International Hall)
+                            </Hyperlink>
+                        </Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph FontSize="24" FontFamily="N" FontStyle="Normal" FontWeight="Bold" TextAlignment="Center">
+                    <Underline>
+                        <Run Foreground="Red" FontSize="28" FontWeight="Bold">М</Run> егаполисы будущего: как меняются города и как они будут конкурировать за жителей
+                    </Underline>
+                </Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn/>
+                        <TableColumn/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell Padding="5">
+                                <Paragraph TextAlignment="Justify">
+                                    В 2020-2021 годах для жителей города стали еще более важны близость природы к месту жительства и собственные ландшафтные парки на внутренней территории благоустроенных дворов. Наличие такой инфраструктуры влияет не только на физическое, но и на эмоциональное благополучие жителей. Девелоперы стараются предвосхищать запросы покупателей и создавать максимально комфортную и разнообразную инфраструктуру в жилых комплексах.
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph Padding="5">
+                                    «Ответственные современные девелоперы сегодня представляют максимальное разнообразие озеленения и благоустройства в своих проектах, понимая, что так они не только отвечают на изменившийся спрос, но и создают привлекательные и современные районы для жизни и отдыха. Балконы и крыши, площадки и цветущие сады, зеленый ландшафт и шаговая доступность парка или набережной, вписанных в территорию жилого комплекса, существенно повышают его востребованность. А нахождение людей на самоизоляции, в ограниченном пространстве своей квартиры, заставило еще сильнее осознать важность комфортной жилой среды и баланса приватных зон и общественных пространств», – рассказывает коммерческий директор Tekta Group Елизавета Севастьянова.
+
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                <Paragraph>
+                    Таким образом, прилегающая к дому территория превращается в полноценное место отдыха. При этом уже нет такого доминирования благоустройства для детей, как было раньше – вместо этого есть спрос на многофункциональность пространства и возможность его использования разными категориями жителей.
+                </Paragraph>
+                <Paragraph BorderBrush="Aqua" BorderThickness="3" Margin="5" Padding="5">
+                    Некоторые современные урбанисты считают, что резкое увеличение городского населения в мире привело к появлению в разных странах высотной застройки без адекватного планирования. Задача современных девелоперов и архитекторов – такого не допустить и предложить интересные варианты благоустройства и озеленения даже в условиях высокой плотности населения и ограниченной площади. Сейчас происходит переосмысление подходов к жилой застройке, особенно высотной, и того, как она соотносится с городской «тканью», природой и сообществом горожан.
+                </Paragraph>
+                <Paragraph FontSize="24" FontFamily="N" FontStyle="Normal" FontWeight="Bold" TextAlignment="Center">
+                    <Underline>
+                        <Run Foreground="Red" FontSize="28" FontWeight="Bold">Н</Run> а уровень выше: стилобаты превращаются в живописные и функциональные дворы
+                    </Underline> >
+                </Paragraph>
+                <Paragraph Padding="0,5,0,5" TextIndent="15">
+
+                    В Москве эксплуатируемые оборудованные лаунж-зоны на высоте пока все еще остаются диковинкой. Более доступный и часто встречающийся вариант – благоустроенный двор на уровне земли и на эксплуатируемой кровле стилобата. Сейчас это один из самых актуальных и востребованных трендов. В большинстве новых комплексов пространство стилобата проектируют под торговые галереи или организуют в нем паркинг. Но его можно также использовать и для увеличения дворовой территории. Многие современные девелоперы стали активно задействовать стилобат под зеленое благоустройство.
+                </Paragraph>
+                <Paragraph> 
+                    <Floater Width="300" HorizontalAlignment="Left" Margin="5" Padding="5">
+                        <BlockUIContainer>
+                            <Image Source="/Data/9.jpeg" />
+                        </BlockUIContainer>
+                    </Floater>
+
+                    Так например в проекте Eniteo на кровле стилобата расположится благоустроенная зона отдыха с ландшафтным дизайном, являющаяся продолжением двора. Подняться сюда можно будет в стеклянном лифте прямо из лобби.
+
+                </Paragraph>
+                <Paragraph>
+                    Другой пример использования стилобата для разнообразных нужд – всем известный деловой центр «Москва-Сити». Так, здания комплекса «Город Столиц», состоящего из двух высотных башен – «Мoсквa» и «Сaнкт-Пeтeрбург», соединяет 17-этажный стилобат, в котором находятся офисы. А в стилобатной части башни «Эволюция» находятся торгово-развлекательные помещения, переходы к центральному ядру Сити, мосту «Багратион» и в метро.
+                    <Floater Width="300" HorizontalAlignment="Right" Margin="5" Padding="5">
+                        <BlockUIContainer>
+                            <Image Source="/Data/8.jpeg" />
+
+                        </BlockUIContainer>
+                    </Floater>
+
+                </Paragraph>
+                <Paragraph>
+                    Еще одно важное преимущество использования стилобата – это создание своего рода искусственного подъема жилого комплекса над уровнем города. Получается, что даже на первом жилом этаже окна квартир не просматриваются с улицы. То же касается и внутреннего двора, который будет находиться на высоте или огорожен стилобатом по периметру комплекса. Все это дает жителям ощущение приватности – находятся ли они у себя дома, гуляют ли с детьми на игровой площадке или проводят семейное торжество во внутреннем сквере.
+                    
+                    <Image Source="/Data/10.jpeg" />
+
+                    Упомянутые комплексы – это примеры современного подхода к планированию и функциональному зонированию в проектах. Такие дома задают тон дальнейшему развитию всего района. В конечном итоге подобные интересные проекты имеют большое влияние на столичный облик и на уровень комфорта городской среды в целом.
+
+                </Paragraph>
+                <BlockUIContainer>
+                    <StackPanel>
+                        <Button Height="50" Width="100">
+                            <Button.Background>
+                                <ImageBrush ImageSource="/класс.jpeg"/>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </BlockUIContainer>
+                <Paragraph>
+                    Также рекомендуем прочитать любопытные статьи:
+                    <Hyperlink NavigateUri="https://stroi.mos.ru/news/krysha-bibliotieki-mgsu-mozhiet-stat-zielienoi" Cursor="Hand">Крыша библиотеки МГСУ может стать «зеленой»</Hyperlink>
+
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
